@@ -1,0 +1,42 @@
+---
+import Icon from "./Icon.astro";
+import { clientsShowcase } from "../data/content.js";
+---
+<section id="clients" class="py-16 md:py-24 bg-white">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="text-center mb-10 md:mb-16 reveal">
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 cinzel text-gray-800">
+        {clientsShowcase.heading}
+      </h2>
+      <p class="text-lg md:text-xl text-gray-600">{clientsShowcase.subtitle}</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-10">
+      {
+        clientsShowcase.items.map((c) => (
+          <a
+            href={c.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="group bg-white rounded-3xl shadow-xl overflow-hidden max-w-sm mx-auto w-full reveal hover:shadow-2xl transition-shadow"
+          >
+            <img
+              src={c.photo}
+              alt={c.name}
+              class="w-full aspect-square object-cover"
+              loading="lazy"
+            />
+            <div class="p-6 text-center">
+              <p class="font-semibold text-lg text-gray-900">{c.name}</p>
+              <p class="text-gray-600 text-sm">{c.handle}</p>
+              <p class="text-gray-500 text-xs mt-1">{c.detail}</p>
+              <span class="inline-flex items-center gap-1 mt-4 text-sm font-semibold text-gray-800 group-hover:text-black">
+                <Icon name="instagram" class="w-4 h-4" /> View on Instagram
+              </span>
+            </div>
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</section>

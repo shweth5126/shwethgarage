@@ -4,6 +4,9 @@ import { site } from "../data/content.js";
 
 const { title } = Astro.props;
 const pageTitle = title ? `${title} - ${site.name}` : site.seoTitle;
+const origin = Astro.site ? Astro.site.origin : "";
+const ogImage = `${origin}${site.ogImage}`;
+const canonical = `${origin}${Astro.url.pathname}`;
 ---
 
 <!doctype html>
@@ -13,6 +16,15 @@ const pageTitle = title ? `${title} - ${site.name}` : site.seoTitle;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{pageTitle}</title>
     <meta name="description" content={site.seoDescription} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={site.name} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={site.seoDescription} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#030303" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

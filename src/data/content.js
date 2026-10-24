@@ -11,10 +11,12 @@ export const site = {
   seoTitle: "Shweth Naik - Filmmaker & Video Editor",
   seoDescription:
     "Portfolio of Shweth Naik - cinematography, video editing, reels, color grading and motion graphics.",
-  // No logo yet - the site shows the name as text. Add /public/logo.svg and
-  // set `showLogo: true` to switch to an image logo later.
+  // No logo yet - the site shows the name as text. To add one later, drop the
+  // file at /public/logo.svg and set `showLogo: true`.
   showLogo: false,
   logo: "/logo.svg",
+  // Link-preview image (WhatsApp / Instagram / LinkedIn shares).
+  ogImage: "/work/dahi-handi.jpg",
 };
 
 export const contact = {
@@ -57,11 +59,11 @@ export const hero = {
   ctaHref: "#contact",
 };
 
+// Only facts that can be verified from this site. The headline numbers
+// (views, projects) live in `footprint` below.
 export const stats = [
-  { icon: "film", value: "70+", label: "Projects Delivered" },
-  { icon: "video", value: "3+", label: "Years Behind the Lens" },
-  { icon: "users", value: "15+", label: "Brands & Creators" },
-  { icon: "eye", value: "2.5M+", label: "Views Generated" },
+  { icon: "film", value: "10", label: "Pieces in the Showreel" },
+  { icon: "users", value: "3", label: "Creator Partners Featured" },
 ];
 
 // Circular avatars that scroll across the screen.
@@ -74,7 +76,7 @@ export const marqueeClients = [
 export const footprint = {
   heading: "Unveiling the Footprint",
   left: { value: "2.5M+", label: "Views Generated" },
-  right: { value: "70+", label: "Reels Delivered" },
+  right: { value: "70+", label: "Projects Delivered" },
   note: "and Counting",
 };
 
@@ -148,21 +150,21 @@ export const process = {
       icon: "video",
       title: "Send the brief",
       body: "Tell me the goal, references and deadline. For edits, share the raw footage over a drive link.",
-      avatar: "/avatars/avatar1.svg",
+      avatar: "/work/edibee.jpg",
     },
     {
       num: "02",
       icon: "sparkles",
       title: "Shoot / build the edit",
       body: "On-set filming, or a first cut with a look built for your brand - pacing, grade and sound.",
-      avatar: "/avatars/avatar2.svg",
+      avatar: "/work/cine-1.jpg",
     },
     {
       num: "03",
       icon: "trending-up",
       title: "Review & deliver",
       body: "Two rounds of revisions included. Final files exported for every platform you need.",
-      avatar: "/avatars/avatar3.svg",
+      avatar: "/work/football.jpg",
     },
   ],
 };
@@ -201,31 +203,32 @@ export const services = {
   tools: ["Premiere Pro", "After Effects", "Photoshop"],
 };
 
-export const testimonials = {
-  heading: "Testimonials",
-  subtitle: "Trusted By Clients, Proven By Stories",
-  // Replace each `quote` with the client's own words once you have their approval.
+// Creators and brands I've made content for. No quotes - each links to the
+// client's real Instagram. Add a `quote:` field to an item to show a testimonial.
+export const clientsShowcase = {
+  heading: "Creators I've Worked With",
+  subtitle: "Real accounts, real audiences",
   items: [
     {
-      video: "",
-      poster: "/clients/the_man_at_city.jpg",
-      quote: "Add a short quote from Abhijit here once approved.",
-      name: "@the_man_at_city",
-      avatar: "/clients/the_man_at_city.jpg",
+      photo: "/clients/the_man_at_city.jpg",
+      name: "Abhijit Naik",
+      handle: "@the_man_at_city",
+      detail: "Fitness - Goa - 11K followers",
+      href: "https://www.instagram.com/the_man_at_city/",
     },
     {
-      video: "",
-      poster: "/clients/the_kdvlogger_goa.jpg",
-      quote: "Add a short quote from KD here once approved.",
-      name: "@the_kdvlogger_goa",
-      avatar: "/clients/the_kdvlogger_goa.jpg",
+      photo: "/clients/the_kdvlogger_goa.jpg",
+      name: "Mr. KD",
+      handle: "@the_kdvlogger_goa",
+      detail: "Vlogger - Goa - 10K followers",
+      href: "https://www.instagram.com/the_kdvlogger_goa/",
     },
     {
-      video: "",
-      poster: "/clients/shreyasrane.jpg",
-      quote: "Add a short quote from Shreyas here once approved.",
-      name: "@_shreyasrane_",
-      avatar: "/clients/shreyasrane.jpg",
+      photo: "/clients/shreyasrane.jpg",
+      name: "Shreyas Rane",
+      handle: "@_shreyasrane_",
+      detail: "Creator - 1,304 followers",
+      href: "https://www.instagram.com/_shreyasrane_/",
     },
   ],
 };

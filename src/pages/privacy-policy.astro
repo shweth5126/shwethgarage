@@ -2,41 +2,36 @@
 import LegalLayout from "../components/LegalLayout.astro";
 import { site, contact } from "../data/content.js";
 ---
-<LegalLayout title="Privacy Policy" updated="August 2026">
+<LegalLayout title="Privacy Policy" updated="October 2026">
   <p>
-    This page explains how {site.name} ("we", "us") handles information collected
-    through this website. Replace this template text with a policy reviewed for
-    your jurisdiction before going live.
+    This page explains how {site.name} handles information collected through
+    this website.
   </p>
 
-  <h2>Information we collect</h2>
+  <h2>Information collected</h2>
   <p>
-    When you submit the contact form we receive the details you enter: your name,
-    email address, project type, budget range, deadline and message. The site
-    also uses basic hosting logs (IP address, browser type) kept by our host for
-    security and analytics.
+    When you submit the contact form, the details you enter are sent to me: your
+    name, email address, project type, budget range, deadline and message. The
+    site's host also keeps basic technical logs (such as IP address and browser
+    type) for security.
   </p>
 
-  <h2>How we use it</h2>
+  <h2>How it is used</h2>
   <p>
-    Contact submissions are used only to respond to your enquiry and discuss
-    potential work. We do not sell or share your information with third parties
-    for marketing.
+    Contact submissions are used only to reply to your enquiry and discuss
+    potential work. Your information is not sold or shared for marketing.
   </p>
 
   <h2>Third-party services</h2>
   <p>
-    The contact form is delivered through a form provider, and scheduling is
-    handled by an external booking tool. Fonts load from Google Fonts. Each of
-    these receives the data needed to provide its service.
+    The contact form is delivered by Web3Forms, fonts load from Google Fonts, and
+    the site is hosted on Vercel. WhatsApp opens in its own app or site when you
+    use the message button. Each of these handles the data it needs to work.
   </p>
 
   <h2>Your choices</h2>
   <p>
-    To ask what data we hold about you, or to have it deleted, email
+    To ask what is held about you, or to have it deleted, email
     <a href={`mailto:${contact.email}`}>{contact.email}</a>.
   </p>
-
-  <h2>Changes</h2>
-  <p>We may update this policy; the date above shows the latest revision.</p>
 </LegalLayout>
