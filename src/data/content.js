@@ -15,8 +15,12 @@ export const site = {
   // file at /public/logo.svg and set `showLogo: true`.
   showLogo: false,
   logo: "/logo.svg",
-  // Link-preview image (WhatsApp / Instagram / LinkedIn shares).
-  ogImage: "/work/dahi-handi.jpg",
+  // 3D portrait shown in the hero and footer.
+  avatar: "/avatar.jpg",
+  // Large 3D portrait shown beside the hero headline (4:5, 720x900).
+  character: "/character.jpg",
+  // Link-preview image (WhatsApp / Instagram / LinkedIn shares), 1200x630.
+  ogImage: "/og.jpg",
 };
 
 export const contact = {
