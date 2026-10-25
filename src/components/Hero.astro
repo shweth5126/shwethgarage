@@ -31,6 +31,17 @@ import { hero, site } from "../data/content.js";
 
     <div class="relative z-10 container mx-auto px-4 md:px-6">
       <div class="max-w-4xl mx-auto text-center mt-0 md:mt-16">
+        {site.avatar && (
+          <div class="flex justify-center mb-5 md:mb-6">
+            <img
+              src={site.avatar}
+              alt={site.name}
+              width="144"
+              height="144"
+              class="w-24 h-24 md:w-32 md:h-32 rounded-full object-cover border-2 border-white/20 shadow-2xl"
+            />
+          </div>
+        )}
         {site.showLogo ? (
           <div class="block lg:hidden flex justify-center mb-10">
             <img src={site.logo} alt={site.name} class="h-36 w-36 object-contain" />
