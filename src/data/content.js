@@ -99,7 +99,6 @@ export const featuredWork = {
   // landscape clips get their own 2-column row below. `ai: true` adds an AI badge.
   // The full catalogue by category lives on /work (see `allWork`).
   videos: [
-    { src: "/work/edibee.mp4", poster: "/work/edibee.jpg" },
     { src: "/work/edibee-2.mp4", poster: "/work/edibee-2.jpg" },
     { src: "/work/deva-rakhandar.mp4", poster: "/work/deva-rakhandar.jpg" },
     { src: "/work/world-map.mp4", poster: "/work/world-map.jpg" },
@@ -124,7 +123,6 @@ export const allWork = {
       name: "Reels & Brand",
       items: [
         { title: "Dahi Handi", src: "/work/dahi-handi.mp4", poster: "/work/dahi-handi.jpg", orientation: "landscape" },
-        { title: "Edibee - Brand Reel", src: "/work/edibee.mp4", poster: "/work/edibee.jpg", orientation: "portrait" },
         { title: "Edibee - Product Reel", src: "/work/edibee-2.mp4", poster: "/work/edibee-2.jpg", orientation: "portrait" },
         { title: "DevaRakhandar", src: "/work/deva-rakhandar.mp4", poster: "/work/deva-rakhandar.jpg", orientation: "portrait" },
         { title: "Edibee - Hiring Video", src: "/work/edibee-hiring.mp4", poster: "/work/edibee-hiring.jpg", orientation: "landscape" },
@@ -171,7 +169,7 @@ export const process = {
       icon: "video",
       title: "Send the brief",
       body: "Tell me the goal, references and deadline. For edits, share the raw footage over a drive link.",
-      avatar: "/work/edibee.jpg",
+      avatar: "/work/deva-rakhandar.jpg",
     },
     {
       num: "02",
