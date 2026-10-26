@@ -120,6 +120,8 @@ export const allWork = {
         { title: "Edibee - Brand Reel", src: "/work/edibee.mp4", poster: "/work/edibee.jpg", orientation: "portrait" },
         { title: "Edibee - Product Reel", src: "/work/edibee-2.mp4", poster: "/work/edibee-2.jpg", orientation: "portrait" },
         { title: "DevaRakhandar", src: "/work/deva-rakhandar.mp4", poster: "/work/deva-rakhandar.jpg", orientation: "portrait" },
+        { title: "Edibee - Hiring Video", src: "/work/edibee-hiring.mp4", poster: "/work/edibee-hiring.jpg", orientation: "landscape" },
+        { title: "Sevaco - Founder Explainer", src: "/work/sevaco-explainer.mp4", poster: "/work/sevaco-explainer.jpg", orientation: "portrait" },
       ],
     },
     {
@@ -127,6 +129,7 @@ export const allWork = {
       items: [
         { title: "Cinematic Reel 1", src: "/work/cine-1.mp4", poster: "/work/cine-1.jpg", orientation: "portrait" },
         { title: "Cinematic Reel 2", src: "/work/cine-2.mp4", poster: "/work/cine-2.jpg", orientation: "portrait" },
+        { title: "Kamat - Rally Coverage", src: "/work/kamat.mp4", poster: "/work/kamat.jpg", orientation: "portrait" },
       ],
     },
     {
@@ -141,6 +144,14 @@ export const allWork = {
       items: [
         { title: "Football Edit", src: "/work/football.mp4", poster: "/work/football.jpg", orientation: "landscape" },
         { title: "Teaser Film", src: "/work/teaser.mp4", poster: "/work/teaser.jpg", orientation: "landscape" },
+      ],
+    },
+    {
+      // ai: true puts an "AI" badge on the tile so AI-generated work is labelled.
+      name: "AI Videos",
+      items: [
+        { title: "Sevaco - AI Story Ad", src: "/work/ai-sevaco-story.mp4", poster: "/work/ai-sevaco-story.jpg", orientation: "portrait", ai: true },
+        { title: "AI Trend Clip", src: "/work/ai-trend-clip.mp4", poster: "/work/ai-trend-clip.jpg", orientation: "portrait", ai: true },
       ],
     },
   ],
